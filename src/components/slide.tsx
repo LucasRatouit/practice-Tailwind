@@ -13,17 +13,18 @@ function Slide() {
     }
 
     type SlideProps = {
-        position: "left" | "right";
+        src: "left" | "right";
         id: "1" | "2"
+        position: "left-0" | "right-0"
     };
     function Slide(props: SlideProps) {
-        return <button id={props.id} onClick={switchComponent} className={`bg-zinc-500 hover:bg-zinc-50 w-12 h-screen opacity-30 ${props.position}-0 absolute`}><img id={props.id} className="opacity-100" src={`./slide-${props.position}.svg`} alt={`slide ${props.position}`} /></button>
+        return <button id={props.id} onClick={switchComponent} className={`bg-zinc-500 hover:bg-zinc-50 w-12 h-screen opacity-30 ${props.position} absolute`}><img id={props.id} className="opacity-100" src={`./slide-${props.src}.svg`} alt={`slide ${props.src}`} /></button>
     }
 
     return (
         <div>
-            <Slide id="1" position="left" />
-            <Slide id="2" position="right" />
+            <Slide id="1" src="left" position="left-0" />
+            <Slide id="2" src="right" position="right-0" />
         </div>
     )
 }
