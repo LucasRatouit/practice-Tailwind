@@ -1,0 +1,128 @@
+@keyframes toolkit-button-true {
+    from {
+        width: 128px;
+        height: 128px;
+    }
+    to {
+        width: 156px;
+        height: 156px;
+    }
+}
+
+.toolkit-button-true {
+    animation: toolkit-button-true 0.25s forwards;
+}
+
+/*  */
+
+@keyframes toolkit-button-false {
+    from {
+        width: 156px;
+        height: 156px;
+    }
+    to {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+.toolkit-button-false {
+    animation: toolkit-button-false 0.25s forwards;
+}
+
+/*  */
+/*  */
+
+@keyframes toolkit-shadow-true {
+    from {
+        width: 128px;
+        height: 128px;
+    }
+    to {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.toolkit-shadow-true {
+    animation: toolkit-shadow-true 0.5s forwards;
+}
+
+/*  */
+
+@keyframes toolkit-shadow-false {
+    from {
+        width: 180px;
+        height: 180px;
+    }
+    to {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+.toolkit-shadow-false {
+    animation: toolkit-shadow-false 0.5s forwards;
+}
+
+/*  */
+/*  */
+
+@keyframes toolkit-rotate-true {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.toolkit-rotate-true {
+    animation: toolkit-rotate-true 0.5s forwards;
+}
+
+/*  */
+
+@keyframes toolkit-rotate-false {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.toolkit-rotate-false {
+    animation: toolkit-rotate-false 0.5s forwards;
+}
+
+/*  */
+/*  */
+
+@keyframes toolkit-true {
+    from {
+        transform: scale(.40);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.toolkit-true {
+    animation: toolkit-true 0.5s forwards;
+}
+
+/*  */
+
+@keyframes toolkit-false {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.40);
+    }
+}
+
+.toolkit-false {
+    animation: toolkit-false 0.5s forwards;
+}
