@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Toggle() {
+const Toggle = () => {
     const [isAnimating, setIsAnimating] = useState(true);
 
     function switching() {
