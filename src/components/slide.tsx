@@ -6,8 +6,8 @@ type SlideProps = {
 
 const maxPage = 4;
 
-const Slide = ({ page, setPage }) => {
-    function switchComponent(e) {
+const Slide = ({ page, setPage }: any) => {
+    function switchComponent(e: any) {
         const id = e.currentTarget.id
         if (id === "1" && page > 1) {
             setPage(page-1)
