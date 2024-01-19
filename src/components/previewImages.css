@@ -1,0 +1,85 @@
+@keyframes previousToNull {
+    from {
+        transform: translate(-66.66%, 25%);
+        opacity: 25%;
+    }
+    to {
+        transform: translate(-250%, 25%);
+        opacity: 0%;
+    }
+}
+.previousToNull {
+    animation: previousToNull 2s forwards;
+}
+.nullToPrevious {
+    animation: previousToNull 2s forwards reverse;
+}
+
+@keyframes currentToPrevious {
+    from {
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        z-index: 20;
+    }
+    to {
+        opacity: 25%;
+        z-index: 10;
+        transform: translate(-66.66%, 25%);
+    }
+}
+.currentToPrevious {
+    animation: currentToPrevious 2s forwards;
+}
+.previousToCurrent {
+    animation: currentToPrevious 2s forwards reverse;
+}
+
+@keyframes nextToCurrent {
+    from {
+        opacity: 25%;
+        transform: translate(66.66%, 25%);
+        z-index: 10;
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        z-index: 20;
+    }
+}
+.nextToCurrent {
+    animation: nextToCurrent 2s forwards;
+}
+.currentToNext {
+    animation: nextToCurrent 2s forwards reverse;
+}
+
+@keyframes nullToNext {
+    from {
+        transform: translate(250%, 25%);
+        opacity: 0%;
+    }
+    to {
+        transform: translate(66.66%, 25%);
+        opacity: 25%;
+    }
+}
+.nullToNext {
+    animation: nullToNext 2s forwards;
+}
+.nextToNull {
+    animation: nullToNext 2s forwards reverse;
+}
+
+@keyframes nullToNext {
+    from {
+        transform: translate(250%, 25%);
+        opacity: 0%;
+    }
+    to {
+        transform: translate(66.66%, 25%);
+        opacity: 25%;
+    }
+}
+.nullToNext {
+    animation: nullToNext 2s forwards;
+}
